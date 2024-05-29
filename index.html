@@ -9,48 +9,167 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-      body {
-        padding-top: 56px; /* Ajusta esto según la altura de tu navbar */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1050; /* Mayor que la navbar */
       }
+      .navbar {
+        z-index: 1000; /* Menor que el header */
+        margin-top: 56px; /* Ajustar el margin-top para evitar superposición con el header */
+      }
+      .form-container {
+       margin-top: 56px; /* Ajustar el margin-top para que el formulario quede debajo del menú */
+       padding: 20px; /* Agregar espacio alrededor del formulario */
+       }
+
     </style>
 
   </head>
 
   <body>
-    <div id="root"></div>
-
     <header class="continer-fluid bg-primary-subtle d-flex justify-content-center"> 
-      <p class="text-light mb-0 p-2 fs-4 custom-font">UCP.Lic.Nutricion</p> 
-    </header>
+      <p class="logo">UCP.lic Nutri</p>
+    </header><br>
 
-    
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand mx-auto" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UCP.Lic.Nutricion</font></font></a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test a realizar</font></font></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <section id="explicacion"><br><br>
+      <div.img-container class="img-container"> </div.img-container>
+        <h1> Mas sobre esto:</h1>
+        <h2> entre nutri y ing en sistemas</h2>
+        <p>
+          para poner algo ...
+        </p>
+    </section>
+
+
+    <section id ="Testeando 2"><br><br>
+      <div class="container">
+
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test a realizar</font></font></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test1</font></font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test2</font></font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test3</font></font></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test1</font></font></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test2</font></font></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Test3</font></font></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </nav>
+
       </div>
-    </nav>
+  </section>
+
+
+  <section id ="Testeando 1">
+    <div class="container"> 
+        <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Brebe descripcion de la comida</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Mejoras a hacer ?</label>
+      </div><br><br>
+      
+      <div class="form-check ">
+        <h3>Que le parece el gusto?</h3>
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        rico
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          feo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+        <label class="form-check-label" for="exampleRadios3">
+          un asco
+        </label>
+      </div>
+
+      <div class="form-check ">
+        <h3>el aspecto ?</h3>
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        rico
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          feo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+        <label class="form-check-label" for="exampleRadios3">
+          un asco
+        </label>
+      </div>
+
+      <div class="form-check ">
+        <h2>que le parecio la textura?</h2>
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        rico
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          feo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+        <label class="form-check-label" for="exampleRadios3">
+          un asco
+        </label>
+      </div>
+    </div>
+    </section>
+
+    <div clss="container">
+      <div class="d-grid gap-2 col-4 mx-auto">
+      <button class="btn btn-primary" type="button">Button</button>
+      </div>
+    </div>
+    
+
+
+
+    <footer>
+      <div class="container">
+        <p>&copy; Sis y Nutri </p>
+      </div>
+
+    </footer>
+
 
 
     <script type="module" src="/src/main.jsx"></script>
