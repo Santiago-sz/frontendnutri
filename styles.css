@@ -21,3 +21,49 @@ li{font-size: 1.25em;}
     max-width: 1400px;
     margin: auto;
 }
+
+footer {
+    text-align: center; /* Alinear el texto al centro */
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* Mayor que la navbar */
+  }
+  header .logo{
+    margin: 0;
+    padding: 10px 25px;
+    font-weight: bold;
+    color:rgb(74, 112, 184);
+    font-size: 1.5em;
+
+  }
+  header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .navbar {
+    z-index: 1000; /* Menor que el header */
+    margin-top: 50px; /* Ajustar el margin-top para evitar superposición con el header */
+  }
+  .form-container {
+   margin-top: 56px; /* Ajustar el margin-top para que el formulario quede debajo del menú */
+   padding: 20px; /* Agregar espacio alrededor del formulario */
+   }
+
+   #testeando1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+
+
+   }
