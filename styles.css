@@ -33,7 +33,9 @@ header {
     width: 100%;
     z-index: 1050; /* Mayor que la navbar */
   }
-  header .logo{
+
+
+header .logo{
     margin: 0;
     padding: 10px 25px;
     font-weight: bold;
@@ -57,13 +59,20 @@ header {
    padding: 20px; /* Agregar espacio alrededor del formulario */
    }
 
-   #testeando1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
+
+@media (min-width:720px){
+    header .container{
+        flex-direction: row;
+    }
+
+    #explicacion .container{
+        width: 100%;
+        text-align:center;
+        display: flex;
+        align-items: center;
+        flex-direction:row;
+    
+    }
 
 
-   }
+}
