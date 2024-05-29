@@ -1,0 +1,23 @@
+
+.custom-button {
+    font-size: 12px; /* Tamaño de fuente */
+    padding: 5px 10px; /* Padding */
+    background-color: #f0f0f0; /* Color de fondo */
+    color: #333; /* Color del texto */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  }
+  
+  /* Estilos para el botón activo */
+  .custom-button.active {
+    background-color: #007bff; /* Cambiar color de fondo para botón activo */
+    color: #fff; /* Cambiar color del texto para botón activo */
+  }
+  
+  /* Estilos para botón deshabilitado */
+  .custom-button:disabled {
+    background-color: #f7f7f7; /* Cambiar color de fondo para botón deshabilitado */
+    color: #999; /* Cambiar color del texto para botón deshabilitado */
+    cursor: not-allowed; /* Cambiar cursor a no permitido para botón deshabilitado */
+  }
