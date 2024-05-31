@@ -76,3 +76,7 @@ header .logo{
 
 
 }
+
+.float-left {
+  float: left;
+}
