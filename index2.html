@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario dinámico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        h1 { font-size: 3.5em; }
+        h2 { font-size: 2.7em; }
+        h3 { font-size: 2em; }
+        p { font-size: 1.25em; }
+        ul { list-style: none; }
+        li { font-size: 1.25em; }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center; /* Alinear el texto al centro */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050; /* Mayor que la navbar */
+        }
+
+        header .logo {
+            margin: 0;
+            padding: 10px 25px;
+            font-weight: bold;
+            color: rgb(74, 112, 184);
+            font-size: 1.5em;
+        }
+
+        header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            z-index: 1000; /* Menor que el header */
+            margin-top: 50px; /* Ajustar el margin-top para evitar superposición con el header */
+        }
+
+        .form-container {
+            margin-top: 56px; /* Ajustar el margin-top para que el formulario quede debajo del menú */
+            padding: 20px; /* Agregar espacio alrededor del formulario */
+        }
+
+        @media (min-width: 720px) {
+            header .container {
+                flex-direction: row;
+            }
+
+            #explicacion .container {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Mi Sitio</div>
+            <!-- Agrega aquí tu barra de navegación si es necesario -->
+        </div>
+    </header>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-target="form1">Test1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="form2">Test2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="form3">Test3</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="form1" class="form-container">
+        <section id="Testeando2">
+            <div class="container">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>nuestro servicio es ?</option>
+                    <option value="1">bueno</option>
+                    <option value="2">malo</option>
+                    <option value="3">promedio</option>
+                </select><br>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Brebe descripcion de la comida</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Mejoras a hacer ?</label>
+                </div><br><br>
+                <div class="form-check">
+                    <h4>Que le parece el gusto?</h4>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1_1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1_1">rico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1_2" value="option2">
+                    <label class="form-check-label" for="exampleRadios1_2">feo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1_3" value="option3" disabled>
+                    <label class="form-check-label" for="exampleRadios1_3">un asco</label>
+                </div>
+                <div class="form-check">
+                    <h4>el aspecto ?</h4>
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2_1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios2_1">rico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2_2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2_2">feo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2_3" value="option3">
+                    <label class="form-check-label" for="exampleRadios2_3">un asco</label>
+                </div>
+                <div class="form-check">
+                    <h4>que le parecio la textura?</h4>
+                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3_1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios3_1">rico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3_2" value="option2">
+                    <label class="form-check-label" for="exampleRadios3_2">feo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3_3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3_3">un asco</label>
+                </div>
+                <br><br>
+                <label for="customRange2" class="form-label">Del 1 a 10. Que tan feo es?</label>
+                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+            </div>
+        </section>
+        <br>
+        <div class="container">
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-primary" type="button">enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="form2" class="form-container">
+        <section id="Testeando2">
+            <div class="container">
+                <!-- Formulario Test2 (similar al anterior) -->
+                <!-- Aquí puedes repetir el formulario o cambiarlo según sea necesario -->
+            </div>
+        </section>
+        <br>
+        <div class="container">
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-primary" type="button">enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="form3" class="form-container">
+        <section id="Testeando2">
+            <div class="container">
+                <!-- Formulario Test3 (similar al anterior) -->
+                <!-- Aquí puedes repetir el formulario o cambiarlo según sea necesario -->
+            </div>
+        </section>
+        <br>
+        <div class="container">
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-primary" type="button">enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const target = this.getAttribute('data-target');
+                    const forms = document.querySelectorAll('.form-container');
+                    forms.forEach(form => {
+                        form.classList.remove('active');
+                    });
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
