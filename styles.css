@@ -107,6 +107,7 @@ header a:hover {
 }
 
 #Encuesta {
+    display: block;
     background-color: rgb(30,30,30);
     color: white;
 }
@@ -130,17 +131,6 @@ header a:hover {
     font-weight: bold;
 }
 
-#final {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
-    height: 80vh;
-}
-
 footer {
     background-color: rgb(230,230,230);
 }
@@ -152,7 +142,7 @@ footer p {
 }
 
 footer .container {
-    height: 150px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -259,7 +249,7 @@ footer .container {
     }
 
     #hero {
-        padding: 20px;
+        padding: 0px;
     }
 
     #hero h1 {
@@ -271,7 +261,7 @@ footer .container {
     }
 
     #somos .container {
-        padding: 100px 12px;
+        padding: 50px 15px ;
     }
 
     #somos .texto {
