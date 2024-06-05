@@ -297,4 +297,27 @@ footer .container {
         background: none;
     }
 
+    
+
+}
+
+#Encuesta .form-check-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+#Encuesta .form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+#Encuesta .form-check-input:focus {
+    box-shadow: 0 0 5px #000000;
 }
