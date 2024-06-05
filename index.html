@@ -1,190 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>UCP.Lic Nutricion</title>
+<head>
+     <meta charset="UTF-8" />
+     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCP. LN y ISI</title>
     <link rel="stylesheet" href="styles.css">
-
-  </head>
-
-  <body>
-    <header class="continer-fluid bg-primary-subtle d-flex justify-content-center"> 
-      
-      <p class="logo">UCP . LN y IS</p>
-    </header><br><br><br>
-
-  
-  <div class="container-fluid h-100 d-flex justify-content-center align-items-center ">
-    <div class="card border-light shadow p-4 rounded-lg w-75">
-      <div class="card-body ">
-          <img src="src/imagenes/licenciatura-en-nutricion-deportiva-bioquimica.jpg" alt="" class="w-40 mx-auto d-block col-5 mb-4 float-left">
-          <h4 class="card-title text-uppercase text-center mb-3">¿Quieres saber un poco ms sobre nuestr proyecto ?</h4>
-          <h5 class="card-title text-uppercase text-center mb-3">En un proyecto colaborativo entre Ingeniería en Sistemas y Nutrición, desarrollamos una página web para realizar análisis sensoriales de alimentos. La plataforma permite evaluar productos mediante cuestionarios afectivos y descriptivos, recolectando datos de forma rápida, eficiente y segura. Esta colaboración interdisciplinaria optimizó tiempos de desarrollo y mejoró la calidad de los resultados, demostrando los beneficios de trabajar en equipo.</h5>
-      
-
-          <section id ="Testeando2">
-
-
-            <div class="container">
-
-              
-              <select class="form-select" aria-label="Default select example">
-                <option selected>¿Qué tan agradable encuentra el sabor de la galleta?</option>
-                <option value="1">Muy desagradable</option>
-                <option value="2">Agradable</option>
-                <option value="3">Neutral</option>
-                <option value="4">Desagradable</option>
-                <option value="5">Muy agradable</option>
-              </select><br>
-        
-        
-                <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">¿Cómo describiría el sabor de la galleta?</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">¿Cuál es su opinión general sobre la galleta?</label>
-              </div><br><br>
-              
-              <div class="form-check ">
-                <h4>¿Le gusta la textura de la galleta?</h4><br>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Me gusta mucho
-                </label>
-              </div>
-              
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  Me gusta
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                  Es aceptable
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                  No me gusta
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                  No me gusta en absoluto
-                </label>
-              </div><br>
-              
-              
-              <div class="form-check">
-                <h4>¿Qué tan satisfecho está con la dulzura de la galleta?</h4><br>
-                <input class="form-check-input aspecto-muy-rico" type="radio" name="aspecto" id="aspecto1" value="muy_rico">
-                <label class="form-check-label" for="aspecto1">
-                  Muy satisfecho.
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input aspecto-rico" type="radio" name="aspecto" id="aspecto2" value="rico">
-                <label class="form-check-label" for="aspecto2">
-                  Satisfecho
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input aspecto-bueno" type="radio" name="aspecto" id="aspecto3" value="bueno">
-                <label class="form-check-label" for="aspecto3">
-                  Neutral
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input aspecto-malo" type="radio" name="aspecto" id="aspecto4" value="malo">
-                <label class="form-check-label" for="aspecto4">
-                  Insatisfecho
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input aspecto-muy-malo" type="radio" name="aspecto" id="aspecto5" value="muy_malo">
-                <label class="form-check-label" for="aspecto5">
-                  Muy insatisfecho
-                </label>
-              </div><br>
-        
-              <div class="form-check">
-                <h4>¿Cuál es su opinión general sobre la galleta?</h4><br>
-                <input class="form-check-input" type="radio" name="texturaRadios" id="texturaRadios1" value="option1" checked>
-                <label class="form-check-label" for="texturaRadios1">
-                 Muy buena
-                </label>
-              </div>
-        
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="texturaRadios" id="texturaRadios2" value="option2">
-                <label class="form-check-label" for="texturaRadios2">
-                  Buena
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="texturaRadios" id="texturaRadios3" value="option3">
-                <label class="form-check-label" for="texturaRadios3">
-                  Neutral
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="texturaRadios" id="texturaRadios4" value="option4">
-                <label class="form-check-label" for="texturaRadios4">
-                  Mala
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="texturaRadios" id="texturaRadios5" value="option5">
-                <label class="form-check-label" for="texturaRadios5">
-                  Muy mala
-                </label>
-              </div><br>
-
-
-        
-              <br><br>
-              <label for="customRange2" class="form-label">Del 1 a 5. ¿Qué tan fuerte es el aroma de la galleta?</label>
-              <input type="range" class="form-range" min="0" max="4" id="customRange2">
-        
-              </div>  
-              <br><br>
-              
-    <div clss="container">
-
-      <div class="d-grid gap-2 col-3 mx-auto">
-      <button class="btn btn-primary" type="button">enviar</button>
-      </div>
-    </div>
-              
-        
-            </section>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">UCP. LN y ISI</p>
+            <nav>
+                <a href="#somos">Quienes Somos</a>
+                <a href="#Encuesta">Encuesta</a>
+                <a href="#caracteristicas">Características</a>
+            </nav>
         </div>
+    </header>
+
+    <section id="hero">
+        <h1>Creando las mejores <br>galletitas integrales</h1><br><br>
+       
+        <h3> Las galletitas pepas integrales son una deliciosa opción de gusto dulce con un aroma a chocolate.</h3>
+        <h3> Tienen una textura suave al paladar, no siendo ni crujientes ni crocantes, y su color es amarronado.</h3>
+        <h3> Estas galletitas, ofrecen un gran aporte de saciedad con una cantidad mínima, destacándose por sus cualidades nutricionales.</h3>
+      </section>
+
+    <section id="somos">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">UCP. LN y ISI</span></h2>
+                <p>Somos los alumnos de la Facultad Cuenca del Plata, de las carreras de Licenciatura en Nutrición e Ingeniería en Sistemas, y hemos unido fuerzas para realizar un emocionante proyecto colaborativo centrado en la creación y recolección de datos sobre unas galletitas pepas integrales. Estudiantes de diferentes niveles, desde 2º hasta 5º año, combinamos nuestros conocimientos y habilidades para lograr un objetivo común. Como grupo de Ingeniería en Sistemas, desarrollamos una plataforma en línea para la creación y administración de encuestas, recopilando datos esenciales sobre la aceptación y preferencias de las galletitas integrales. Nuestros compañeros de Nutrición diseñaron la receta de las galletitas, asegurándose de que cumplieran con las cualidades nutricionales adecuadas y promovieran una alimentación saludable.</p>
+               
+              </div>
+        </div>
+    </section>
+
+    <section id="Encuesta">
+        <div class="container">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="card border-light shadow p-4 rounded-lg w-100">
+                  <div class="card-body">
+                    <section id="Testeando2">
+                      <div class="container">
+                        <h2>Encuesta</h2><br>
+                        <p>Por favor, responda las siguientes preguntas.</p>
+                        <form id="surveyForm">
+                          <div class="form-check">
+                            <h4>¿Le gusta la textura de la galleta?</h4><br>
+                            <input class="form-check-input" type="radio" name="texture" id="texture1" value="much" checked>
+                            <label class="form-check-label" for="texture1">Me gusta mucho</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="texture" id="texture2" value="like">
+                            <label class="form-check-label" for="texture2">Me gusta</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="texture" id="texture3" value="acceptable">
+                            <label class="form-check-label" for="texture3">Es aceptable</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="texture" id="texture4" value="dislike">
+                            <label class="form-check-label" for="texture4">No me gusta</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="texture" id="texture5" value="hate">
+                            <label class="form-check-label" for="texture5">No me gusta en absoluto</label>
+                          </div><br>
+
+                          <div class="form-check">
+                            <h4>¿Qué tan satisfecho está con la dulzura de la galleta?</h4><br>
+                            <input class="form-check-input" type="radio" name="sweetness" id="sweetness1" value="very_satisfied">
+                            <label class="form-check-label" for="sweetness1">Muy satisfecho.</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sweetness" id="sweetness2" value="satisfied">
+                            <label class="form-check-label" for="sweetness2">Satisfecho</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sweetness" id="sweetness3" value="neutral">
+                            <label class="form-check-label" for="sweetness3">Neutral</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sweetness" id="sweetness4" value="dissatisfied">
+                            <label class="form-check-label" for="sweetness4">Insatisfecho</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sweetness" id="sweetness5" value="very_dissatisfied">
+                            <label class="form-check-label" for="sweetness5">Muy insatisfecho</label>
+                          </div><br>
+
+                          <div class="form-check">
+                            <h4>¿Cuál es su opinión general sobre la galleta?</h4><br>
+                            <input class="form-check-input" type="radio" name="opinion" id="opinion1" value="very_good" checked>
+                            <label class="form-check-label" for="opinion1">Muy buena</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opinion" id="opinion2" value="good">
+                            <label class="form-check-label" for="opinion2">Buena</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opinion" id="opinion3" value="neutral">
+                            <label class="form-check-label" for="opinion3">Neutral</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opinion" id="opinion4" value="bad">
+                            <label class="form-check-label" for="opinion4">Mala</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opinion" id="opinion5" value="very_bad">
+                            <label class="form-check-label" for="opinion5">Muy mala</label>
+                          </div><br>
+
+                          <label for="aromaRange" class="form-label">Del 1 a 5. ¿Qué tan fuerte es el aroma de la galleta?</label>
+                          <input type="range" class="form-range" min="1" max="5" id="aromaRange"><br><br><br>
+
+                          <div class="d-grid gap-2 col-3 mx-auto">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="receta">
+                      <h2>Receta de Galletitas Pepas Integrales</h2>
+                      <p><strong>PREPARACIÓN 👩🏽‍🍳:</strong></p>
+                      <ol>
+                          <li>Colocar en un bowl la harina integral, el cacao amargo, el polvo de hornear, el azúcar mascabo, la leche, el huevo y 1 cda de mantequilla de maní. Mezclar e integrar.</li>
+                          <li>Formar la masa. Si hace falta más humedad, añadir más leche; caso contrario, añadir más harina.</li>
+                          <li>Formar las pepas y colocar en una asadera con rocío vegetal, llevando a horno moderado por 20 minutos.</li>
+                          <li>Dejar enfriar. Por otro lado, derretir el chocolate blanco y mezclar con la cucharada de mantequilla de maní. Rellenar las galletitas.</li>
+                      </ol>
+                      <ul>
+                          <li>INGREDIENTES 👩🏽‍🍳:</li>
+                          <li>👆🏻1 huevo.</li>
+                          <li>👆🏻1/2 taza de azúcar mascabo.</li>
+                          <li>👆🏻2 cdas de mantequilla de maní sin azúcar.</li>
+                          <li>👆🏻1 cda de polvo de hornear.</li>
+                          <li>👆🏻1/2 taza de cacao amargo.</li>
+                          <li>👆🏻1 taza de harina integral.</li>
+                          <li>👆🏻C/n chocolate blanco sin azúcar.</li>
+                          <li>👆🏻1/3 taza de leche descremada.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+  </section>
   
+  
+
+    <div id="thankYouMessage" style="display:none;">
+      <h1>Gracias por tu ayuda en nuestro proyecto. Espero te haya gustado la galletita.</h1>
+    </div>
+
 
     <footer>
-      <div class="container">
-        <p>&copy; Sis y Nutri </p>
-      </div>
+        <div class="container">
+            <p>&copy; UCP. LN y ISI</p>
+        </div>
     </footer>
- 
 
-
-    <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
-  </body>
+    <script>
+      document.getElementById('surveyForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          document.getElementById('Encuesta').style.display = 'none'; // Oculta el contenedor del formulario
+          document.getElementById('thankYouMessage').style.display = 'block'; // Muestra el mensaje de agradecimiento
+      });
+  </script>
+</body>
 </html>
