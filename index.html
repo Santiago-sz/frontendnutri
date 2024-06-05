@@ -45,11 +45,11 @@
             <div class="container-fluid d-flex justify-content-center align-items-center">
                 <div class="card border-light shadow p-4 rounded-lg w-100">
                   <div class="card-body">
-                    <section id="Testeando2">
-                      <div class="container">
+                    <section id="Testeando2" required>
+                      <div class="container" >
                         <h2>Encuesta</h2><br>
                         <p>Por favor, responda las siguientes preguntas.</p>
-                        <form id="surveyForm" required>
+                        <form id="surveyForm" >
                           <div class="form-check">
 
                        <!-- Sabor General -->
@@ -326,8 +326,6 @@
           </div>
       </div>
   </section>
-  
-  
 
     <div id="thankYouMessage" style="display:none;">
       <h1>Gracias por tu ayuda en nuestro proyecto. Espero te haya gustado la galletita.</h1>
@@ -344,8 +342,37 @@
     <script>
       document.getElementById('surveyForm').addEventListener('submit', function(event) {
           event.preventDefault();
-          document.getElementById('Encuesta').style.display = 'none'; // Oculta el contenedor del formulario
-          document.getElementById('thankYouMessage').style.display = 'block'; // Muestra el mensaje de agradecimiento
+          
+          const form = event.target;
+          const questions = [
+              'generalFlavor', 'chocolateAroma', 'mouthTexture', 'cookieColor',
+              'generalSatisfaction', 'sweetnessIntensity', 'chocolateAromaIntensity',
+              'softTexture', 'satietyLevel', 'perceivedSize'
+          ];
+          
+          let allAnswered = true;
+  
+          for (const question of questions) {
+              const radios = form.elements[question];
+              let answered = false;
+              for (const radio of radios) {
+                  if (radio.checked) {
+                      answered = true;
+                      break;
+                  }
+              }
+              if (!answered) {
+                  allAnswered = false;
+                  break;
+              }
+          }
+  
+          if (!allAnswered) {
+              alert('Por favor, responde todas las preguntas antes de enviar la encuesta.');
+          } else {
+              document.getElementById('Encuesta').style.display = 'none';
+              document.getElementById('thankYouMessage').style.display = 'block';
+          }
       });
   </script>
     
