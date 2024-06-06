@@ -116,6 +116,7 @@ header a:hover {
     padding: 50px 12px; /* Ajusta el padding superior para mover la sección hacia arriba */
 }
 
+
 #Encuesta h2 {
     font-size: 3.2em;
     text-align: center; /* Centra solo el <h2> */
@@ -197,16 +198,21 @@ footer .container {
         width: 400px; 
     }
 
+    #Encuesta h2 {
+        font-size: 3.2em;
+        text-align: center; /* Centra solo el <h2> */
+    }
+
     #caracteristicas {
         background-image: url("src/media/Captura de pantalla 2024-06-04 174042.png");
         background-repeat: no-repeat;
         background-size: 700px 700px;
-        background-position: calc(90vw - 500px) 120px;
+        background-position: calc(90vw - 500px) 100px;
     }
 
     #caracteristicas .container {
         text-align: initial;
-        padding: 50px 12px; /* Ajusta el padding superior para mover la sección hacia arriba */
+        padding: 100px 12px; /* Ajusta el padding superior para mover la sección hacia arriba */
     }
     
 
@@ -242,6 +248,7 @@ footer .container {
         align-items: center;
     }
 
+
     header nav {
         flex-direction: column;
         text-align: center;
@@ -271,12 +278,12 @@ footer .container {
     }
 
     #somos .img-container {
-        height: 300px;
+        height: 100px;
         width: 100%;
     }
 
     #caracteristicas .container {
-        padding: 100px 12px;
+        padding: 100px ;
     }
 
     #caracteristicas ul {
@@ -286,7 +293,6 @@ footer .container {
     #caracteristicas {
         background: none;
     }
-
 }
 
 #Encuesta .form-check-input {
@@ -308,4 +314,12 @@ footer .container {
 
 #Encuesta .form-check-input:focus {
     box-shadow: 0 0 5px #000000;
+}
+#Encuesta h2{
+    display: flex;
+}
+
+#caracteristicas ul {
+    margin-left: 0;
+    text-align: flex;
 }
