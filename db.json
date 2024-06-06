@@ -1,5 +1,18 @@
 {
   "formData": [
-   
+    {
+      "id": "6259",
+      "age": "33",
+      "generalFlavor": "bad",
+      "chocolateAroma": "very_bad",
+      "mouthTexture": "very_bad",
+      "cookieColor": "bad",
+      "generalSatisfaction": "bad",
+      "sweetnessIntensity": "strong",
+      "chocolateAromaIntensity": "very_weak",
+      "softTexture": "moderate",
+      "satietyLevel": "very_satiated",
+      "perceivedSize": "small"
+    }
   ]
 }

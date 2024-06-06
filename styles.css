@@ -127,7 +127,7 @@ header a:hover {
 }
 
 #caracteristicas li {
-    margin: 16px 0px;
+
     font-weight: bold;
 }
 
@@ -190,7 +190,7 @@ footer .container {
     }
 
     #somos .img-container {
-        background-image: url("src/media/download_image_1717502210547.png");
+        background-image: url("src/media/download_image_1717502650901.png");
         background-size: cover;
         background-position: center center;
         height: 500px;
