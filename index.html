@@ -53,7 +53,7 @@
 
                         <form id="surveyForm" >
                           <div class="form-check">
-                            <div class="form-check col-md-6">
+                            <div class="form-check">
                               <label for="age"><h4>Edad</h4></label>
                               <input type="number" id="age" name="age" min="0" required>
                           </div><br>
@@ -396,7 +396,7 @@
           perceivedSize: document.querySelector('input[name="perceivedSize"]:checked').value
         };
 
-        axios.post('http://localhost:4000/formData', formData)
+        axios.post('http://localhost:5000/api/survey', formData)
         .then(function(response) {
             console.log(response);
             document.getElementById('Encuesta').style.display = 'none';
