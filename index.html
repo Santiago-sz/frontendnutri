@@ -397,7 +397,7 @@
           perceivedSize: document.querySelector('input[name="perceivedSize"]:checked').value
         };
 
-        axios.post('http://localhost:5000/api/survey', formData)
+        axios.post(`https://integrador-nutricion-backend.vercel.app/api/survey`, formData)
         .then(function(response) {
             console.log(response);
             document.getElementById('Encuesta').style.display = 'none';

@@ -14,8 +14,17 @@
         <div class="container">
             <p class="logo">UCP. LN y ISI</p>
             <nav>
-                <a href="#somos">Grafico de encuestas</a>
-                <a href="#Encuesta">Descarga de encuestas</a>
+                <form class="card p-4">
+                    <div class="input-group">
+                      <button type="submit" class="btn btn-secondary">Guardar</button>
+                      <input type="text" class="form-control" placeholder="Email  ">
+                    </div>
+                </form><br>
+                <form class="card p-4">
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-secondary">Descargar datos</button>
+                      </div>
+                  </form>
             </nav>
         </div>
     </header>
@@ -37,7 +46,7 @@
                 // Función para obtener los datos de promedio desde la API
                 async function fetchAverageData() {
                     try {
-                        const response = await axios.get('http://localhost:5000/api/survey/average');
+                        const response = await axios.get('https://integrador-nutricion-backend.vercel.app/api/survey/average');
                         return response.data;
                     } catch (error) {
                         console.error('Error al obtener los datos:', error);
